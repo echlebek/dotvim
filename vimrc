@@ -166,12 +166,15 @@ let g:syntastic_always_populate_loc_list = 1
 
 let g:syntastic_mode_map = { 'mode': 'active',
 \ 'active_filetypes': [],
-\ 'passive_filetypes': ['html'] }
-let g:syntastic_go_checkers = ['govet', 'go']
+\ 'passive_filetypes': ['html', 'go'] }
+let g:syntastic_go_checkers = ['govet', 'golint', 'errcheck']
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '⚠'
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_args = '--config ' . expand('~/.eslintrc')
+
+" Fix for vim-go + syntastic
+let g:go_list_type = "quickfix"
 
 let g:vimclojure#WantNailgun = 1
 let grvimclojure#ParenRainbow = 1
