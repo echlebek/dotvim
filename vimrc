@@ -46,7 +46,7 @@ if has("gui_running")
   if has("gui_win32")
     set guifont=..\ ....:h10:cSHIFTJIS
   elseif has("x11")
-    set guifont=DejaVu\ Sans\ Mono\ 10
+    set guifont=Hack\ 9
   elseif has("gui_macvim")
     set macligatures
     set guifont=Menlo\ Regular:h12
@@ -175,6 +175,13 @@ let g:syntastic_javascript_eslint_args = '--config ' . expand('~/.eslintrc')
 
 " Fix for vim-go + syntastic
 let g:go_list_type = "quickfix"
+let g:go_fmt_command = "goimports"
+let g:go_highlight_methods = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
 
 let g:vimclojure#WantNailgun = 1
 let grvimclojure#ParenRainbow = 1
