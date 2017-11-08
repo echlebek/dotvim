@@ -5,3 +5,5 @@ vim -u bundles.vim +BundleInstall +qall
 
 # Install go packages
 go get -u github.com/bradfitz/goimports
+
+mkdir swap
