@@ -182,6 +182,12 @@ let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
+" terraform plugin
+let g:terraform_align=1
+let g:terraform_fold_sections=1
+let g:terraform_remap_spacebar=1
+let g:terraform_commentstring='//%s'
+let g:terraform_fmt_on_save=1
 
 let g:vimclojure#WantNailgun = 1
 let grvimclojure#ParenRainbow = 1

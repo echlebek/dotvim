@@ -22,6 +22,7 @@ Plugin 'vim-scripts/argtextobj.vim'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'Shougo/neocomplete'
+Plugin 'hashivim/vim-terraform'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
